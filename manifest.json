@@ -1,0 +1,16 @@
+{
+  "name": "vimangareader",
+  "description": "add a few vi style bindings to mangareader.net",
+  "version": "1.0",
+  "permissions": [
+    "http://www.mangapanda.com/*/*"
+  ],
+  "manifest_version": 2,
+  "content_scripts" : [
+    {
+      "matches": ["http://www.mangapanda.com/*/*"],
+      "js": ["key_bind_wrapper.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
