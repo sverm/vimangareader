@@ -9,7 +9,12 @@
   "content_scripts" : [
     {
       "matches": ["http://www.mangapanda.com/*/*"],
-      "js": ["key_bind_wrapper.js"],
+      "js": ["mangapanda.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["http://questionablecontent.net/*"],
+      "js": ["qc.js"],
       "run_at": "document_end"
     }
   ]
