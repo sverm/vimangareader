@@ -8,6 +8,16 @@
   "manifest_version": 2,
   "content_scripts" : [
     {
+      "matches": ["http://oglaf.com/*"],
+      "js": ["oglaf.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["http://www.webtoons.com/*"],
+      "js": ["webtoons.js"],
+      "run_at": "document_end"
+    },
+    {
       "matches": ["http://www.mangapanda.com/*/*"],
       "js": ["mangapanda.js"],
       "run_at": "document_end"
