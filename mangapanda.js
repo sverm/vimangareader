@@ -1,5 +1,4 @@
 function key_down_wrapper(e) {
-    console.log(e);
     if (e.which == 76) {
         document.getElementsByClassName("next")[1].children[0].click();
     }
